@@ -88,8 +88,8 @@ For the full Javascript API Specification see [here] (https://github.com/feature
 
 Apache-2.0
 
-[npm-url]: https://nodei.co/npm/featureflow-client
-[npm-img]: https://nodei.co/npm/featureflow-client.png
+[npm-url]: https://nodei.co/npm/featureflow-angular
+[npm-img]: https://nodei.co/npm/featureflow-angular.png
 
 [dependency-url]: https://www.featureflow.io
 [dependency-img]: https://www.featureflow.io/wp-content/uploads/2016/12/featureflow-web.png
