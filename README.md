@@ -6,6 +6,8 @@
 
 > Featureflow Angular 2+ Module
 
+#### This is currently under development.
+
 Get your Featureflow account at [featureflow.io](http://www.featureflow.io)
 
 ## Get Started
