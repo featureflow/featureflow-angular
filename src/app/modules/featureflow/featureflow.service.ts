@@ -1,5 +1,5 @@
 import {Inject, Injectable, Optional} from '@angular/core';
-import { Featureflow } from 'featureflow-client';
+import * as Featureflow from 'featureflow-client';
 import { Evaluate } from 'featureflow-client';
 
 

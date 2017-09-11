@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
-    "featureflow-client": "^1.1.0",
+    "featureflow-client": "^1.2.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -48,5 +48,8 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
+  },
+  "peerDependencies": {
+    "featureflow-client": "^1.2.0"
   }
 }
