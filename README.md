@@ -55,7 +55,7 @@ import 'event-source-polyfill';
 Get your environment's Featureflow Javascript API key and initialise a new Featureflow client
 
 ```js
-var FF_JS_API_KEY = '<Your javascript api key goes here>';
+var FF_JS_API_KEY = '<Your javascript api key goes here> (The key beginning js-env-)';
 //...
 var featureflow = Featureflow.init(FF_JS_API_KEY);
 ```
@@ -101,7 +101,11 @@ Apache-2.0
 [dependency-img]: https://www.featureflow.io/wp-content/uploads/2016/12/featureflow-web.png
 
 ## Building
-To run the demo 
-``` ng serve```
+This repository also includes a demo app.
+To run the demo:
+
+* Install angular cli ```npm install -g @angular/cli``` 
+* Set your JS Key in featureflow.componsent.ts
+* Start the demo ``` ng serve```
 To deploy to npm
 ```npm publish```

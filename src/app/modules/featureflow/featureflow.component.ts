@@ -9,15 +9,17 @@ import {FeatureflowService} from "./featureflow.service";
 })
 export class FeatureflowComponent implements OnInit {
   featureflow: any;
+  private exampleFeatureStatus: 'off';
 
   constructor(
     private featureflowService: FeatureflowService
   ) {
-    this.featureflow = this.featureflowService.init("key");
+
+    this.featureflow = this.featureflowService.init("js-env-yourKey");
   }//so angular knows to inject it here
 
   ngOnInit() {
-
+    this.exampleFeatureStatus = this.featureflow.evaluate("example-feature").value();
   }
 
 }
