@@ -104,7 +104,7 @@ Apache-2.0
 This repository also includes a demo app.
 To run the demo:
 * Requires: node >= 8 ```nvm install 8```
-* Install the latest angular cli ```npm install @angular/cli``` 
+* Install the latest angular cli ```npm install -g @angular/cli``` 
 * Set your JS Key in featureflow.component.ts
 * Install dependencies: ```npm install```
 * Start the demo ``` ng serve```
