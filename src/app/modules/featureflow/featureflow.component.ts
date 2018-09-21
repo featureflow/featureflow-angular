@@ -15,7 +15,7 @@ export class FeatureflowComponent implements OnInit {
     private featureflowService: FeatureflowService
   ) {
 
-    this.featureflow = this.featureflowService.init("js-env-yourKey");
+    this.featureflow = this.featureflowService.init("js-env-YOUR_JS-ENV-KEY-HERE");
   }//so angular knows to inject it here
 
   ngOnInit() {
