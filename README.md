@@ -105,7 +105,7 @@ This repository also includes a demo app.
 To run the demo:
 * Requires: node >= 8 ```nvm install 10```
 * Install the latest angular cli ```npm install -g @angular/cli``` 
-* Set your JS Key in featureflow.component.ts
+* Set your JS Key in src/app/modules/featureflow/featureflow.component.ts
 * Install dependencies: ```npm install```
-* Start the demo ``` ng serve```
+* Start the demo ```ng serve```
 
