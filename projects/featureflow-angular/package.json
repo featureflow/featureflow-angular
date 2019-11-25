@@ -1,7 +1,7 @@
 {
   "name": "featureflow-angular",
   "version": "8.13.4",
-  "description": "Featureflow angular helper service for Angular.",
+  "description": "Featureflow library for Angular.",
   "keywords" :["Angular","Library","featureflow","feature","flag","rollout","dark launch"],
   "license" : "SEE LICENSE IN LICENSE",
   "repository": {

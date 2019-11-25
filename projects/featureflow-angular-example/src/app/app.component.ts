@@ -1,11 +1,6 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnDestroy} from '@angular/core';
 import { FeatureflowAngularService } from 'featureflow-angular';
-import {Observable, Subscription} from "rxjs";
-
-
-class FeatureMap {
-}
-
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -16,15 +11,12 @@ class FeatureMap {
 })
 export class AppComponent implements OnDestroy {
   title = 'featureflow-angular-example';
-  features$: Observable<FeatureMap>;
   features: any;
   featureflow: any;
   exampleFeatureValue;
   updateFeatures: Subscription = null;
   constructor(
-
     private featureflowService: FeatureflowAngularService,
-    private cd: ChangeDetectorRef
   ){
     featureflowService.init("js-env-bbb659960a3344c5a31681282c0c4bdf", {id:'1'}, null);
     this.features = featureflowService.getFeatures();

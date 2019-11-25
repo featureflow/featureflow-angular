@@ -3,5 +3,4 @@
  */
 
 export * from './lib/featureflow-angular.service';
-export * from './lib/featureflow-angular.component';
 export * from './lib/featureflow-angular.module';
