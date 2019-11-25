@@ -1,0 +1,15 @@
+<div>
+<ff-featureflow-angular></ff-featureflow-angular>
+  <table >
+    <div *ngIf="featureflow.evaluate('example-feature').isOn()">
+      Example feature is on
+    </div>
+    <hr/>
+    <div *ngIf="!featureflow.evaluate('example-feature').isOn()">
+      Example feature is off
+    </div>
+    <div *ngFor="let item of features | keyvalue">
+      {{item.key}}:{{item.value}}
+    </div>
+  </table>
+</div>
