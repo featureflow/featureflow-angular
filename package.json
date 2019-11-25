@@ -1,6 +1,14 @@
 {
   "name": "featureflow-angular",
   "version": "0.0.0",
+  "description": "Featureflow angular helper service for Angular.",
+  "keywords" :["Angular","Library","featureflow","feature","flag","rollout","dark launch"],
+  "license" : "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/featureflow/featureflow-angular"
+  },
+  "homepage" :"https://www.featureflow.io",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -47,5 +55,13 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "scripts": {
+    "build_lib": "ng build featureflow-angular",
+    "copy-license": "cp LICENSE ./dist/featureflow-angular",
+    "copy-readme": "cp README.md ./dist/featureflow-angular",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "npm_pack": "cd dist/featureflow-angular && npm pack",
+    "package": "npm run build_lib && npm run copy-files && npm run npm_pack"
   }
 }

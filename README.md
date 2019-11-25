@@ -9,12 +9,15 @@
 Get your Featureflow account at [featureflow.io](http://www.featureflow.io)
 
 ## Get Started
+Import the featureflow angular library into your angular application:
+``
 
+``
 
 
 
 ## Developing
-Thi project consists of 2 modules:
+This project consists of 2 modules:
 * /projects/featureflow-angular - the angular service library
 * /projects/featureflow-angular-example - the example implementation
 
