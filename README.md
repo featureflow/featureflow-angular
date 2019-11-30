@@ -99,6 +99,18 @@ $ npm install --save featureflow-angular
         }
       }
       ```
+## Example
+Update the SDK key in featureflow-angular-examaple/src/app/app.component.ts to match your JS Client Environment SDK Key
+
+```
+    featureflowService.init('js-env-YOUR-KEY-HERE', {id: 'uniqueId1'}, null);
+```
+Start the example project
+```bash
+cd projects/featureflow-angular-example
+ng serve
+```
+Try toggling features in the featureflow dashboard for your project and environment.   
      
 ## Developing
 This project consists of 2 modules:
@@ -114,7 +126,12 @@ then run the example
 cd projects/featureflow-angular-example
 ng serve
 ```
-noting the library has to be rebuilt to 
+## Publishing
+After building your library with `ng build featureflow-angular`, go to the dist folder `cd dist/featureflow-angular` and run `npm publish`.
+
+## Running unit tests
+
+Run `ng test featureflow-angular` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 
 [npm-url]: https://nodei.co/npm/featureflow-angular

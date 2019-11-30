@@ -19,7 +19,12 @@ export class AppComponent implements OnDestroy {
     private featureflowService: FeatureflowAngularService,
     private ref: ChangeDetectorRef
   ) {
-    featureflowService.init('js-env-bbb659960a3344c5a31681282c0c4bdf', {id: '1'}, null);
+    //Use your 'JS Client Environment SDK Key:'
+    featureflowService.init('js-env-KEY', {id: 'myUniqueId1'}, null);
+
+    //featureflowService.init('js-env-KEY');
+    //without an id, anonymous unique user id stored in localStorage
+
     this.features = featureflowService.getFeatures();
 
     this.featureflow = featureflowService.client();

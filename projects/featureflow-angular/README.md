@@ -21,14 +21,14 @@ $ npm install --save featureflow-angular
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
     import { FeatureflowAngularModule } from 'featureflow-angular';
-    
+    //...
     @NgModule({
       declarations: [
        //...
       ],
       imports: [
         BrowserModule,
-        FeatureflowAngularModule
+        FeatureflowAngularModule // FeatureflowAngularModule added
       ],
       providers: [],
    })
@@ -58,8 +58,9 @@ $ npm install --save featureflow-angular
    
      constructor(
        private featureflowService: FeatureflowAngularService
-     ) {
-           featureflowService.init(API_KEY, {id: '1'}, null);
+     ) {           
+           featureflowService.init(API_KEY, {id: 'uniqueUserId1'}, null);
+           //or featureflowService.init(API_KEY);//creates a random userId
            this.features = featureflowService.getFeatures();
            this.featureflow = featureflowService.client();
      }
@@ -99,7 +100,18 @@ $ npm install --save featureflow-angular
         }
       }
       ```
-   
+## Example
+Update the SDK key to match your JS Client Environment SDK Key in featureflow-angular-examaple/src/app/app.component.ts
+
+```
+    featureflowService.init('js-env-YOUR-KEY-HER', {id: '1'}, null);
+```
+Start the example project
+```bash
+cd projects/featureflow-angular-example
+ng serve
+```
+Try toggling features in the featureflow dashboard for your project and environment.   
 
 ## Developing
 This project consists of 2 modules:
@@ -111,6 +123,7 @@ to build the library, from the root directory run
 ng build featureflow-angular
 ```
 then run the example
+
 ```bash
 cd projects/featureflow-angular-example
 ng serve
