@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core';
-import { FeatureflowAngularComponent } from './featureflow-angular.component';
-
-
+import {NgModule} from '@angular/core';
 
 @NgModule({
-  declarations: [FeatureflowAngularComponent],
-  imports: [
-  ],
-  exports: [FeatureflowAngularComponent]
+  declarations: [],
+  imports: [],
+  exports: []
 })
-export class FeatureflowAngularModule { }
+export class FeatureflowAngularModule {
+}
