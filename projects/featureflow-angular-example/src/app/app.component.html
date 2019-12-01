@@ -1,11 +1,11 @@
 <div>
   <table >
-    <div *ngIf="featureflow.evaluate('example-feature').isOn()">
+    <div *ngIf="featureflowService.evaluate('example-feature').isOn()">
       Example feature is on
     </div>
     <hr/>
-    <div *ngIf="!featureflow.evaluate('example-feature').isOn()">
-      Example feature is off
+    <div *ngIf="!featureflowService.evaluate('example-feature').isOn()">
+      Example feature is {{featureflowService.evaluate('example-feature').value()}}
     </div>
     <div *ngFor="let item of features | keyvalue">
       {{item.key}}:{{item.value}}
