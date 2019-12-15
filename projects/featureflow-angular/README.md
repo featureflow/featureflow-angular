@@ -129,7 +129,10 @@ cd projects/featureflow-angular-example
 ng serve
 ```
 ## Publishing
-After building your library with `ng build featureflow-angular`, go to the dist folder `cd dist/featureflow-angular` and run `npm publish`.
+```
+npm run package
+npm publish ./dist/featureflow-angular/featureflow-angular-xx.xx.xx.tgz
+```
 
 ## Running unit tests
 
