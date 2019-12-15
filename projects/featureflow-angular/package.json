@@ -1,6 +1,6 @@
 {
   "name": "featureflow-angular",
-  "version": "6.13.4",
+  "version": "6.13.5",
   "description": "Featureflow library for Angular.",
   "keywords" :["Angular","Library","featureflow","feature","flag","rollout","dark launch"],
   "license" : "SEE LICENSE IN LICENSE",
