@@ -99,7 +99,12 @@ $ npm install --save featureflow-angular
         }
       }
       ```
-## Example
+## Live Example
+There is a simple running example based on the angular starter on stackblitz: https://stackblitz.com/edit/simple-featureflow-angular-example
+
+Replace the key in app.component.ts with your own Environment SDK Key.
+
+## Local Example
 Update the SDK key in featureflow-angular-examaple/src/app/app.component.ts to match your JS Client Environment SDK Key
 
 ```

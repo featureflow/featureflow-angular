@@ -308,6 +308,11 @@ Callback is fired with one parameter with the error message.
 - [x] Automate release to bower on `npm prepublish`
 - [ ] Automate release script to cdn on `npm prepublish`
 
+## Publishing 
+```
+./deploy_prod_npm.sh
+./deploy_prod_s3.sh
+```
 ## License
 
 Apache-2.0
